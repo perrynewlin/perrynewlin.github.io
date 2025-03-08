@@ -222,6 +222,18 @@ to create innovative and elegant solutions.
 </ul>
 <h3>Projects</h3>
 <ul>
+
+<li><strong>1Mbps FPGA to FPGA Network with Addressing</strong>
+<em>Technologies Used: VHDL, TCL/Tk, Questasim, Vivado, Manchester, CRC8</em><p>
+For CPE 3300 (Computer Networking) we were tasked with implementing a CSMACD networking protocol with addressing. I decided to implement the entire protocol in pure hardware, this allowed me to bring the specified bitrate of 1000bps all the way up to 1,000,000bps; this development process involved many test benches, a deep pipeline, and a lot of time on the saleae logic analyzer.
+
+<p>
+The implementation includes but is not limited to the following:<p>
+<p>* Packet structure: (preamble, source, destination, length, message(1-255bytes), CRC8 FCS)
+<p>* 8 Stage calibration pipeline on the Manchester decoder providing an extreme range of tolerances for decoding incoming Manchester streams.
+<p>* Pseudorandom retransmission of packets if network is detected as a collision.
+</li>
+
 <li><strong>AI Chatbot</strong> 
 <em>Technologies Used: Python (Flask, llama_cpp, HTTPServer)</em><p>
  Custom made terminal frontend that allows the user to communicate with a quantized obliterated LLM. <a href="https://youtu.be/Zt4UJCS3wlM?feature=shared" target="_blank" rel="noopener"> Watch the Demo!</a></li>
