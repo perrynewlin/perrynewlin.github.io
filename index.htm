@@ -186,32 +186,41 @@ footer {
 
 
 <p>
-I’m a Junior at the <a href="https://msoe.edu" target="_blank" rel="noopener">Milwaukee School of Engineering</a>. I’ve been actively involved in embedded systems, circuitry, and homebrew computers since I was 10 years old. 
-I’m the person who has their entire living room full of custom PCBs, FPGA development boards, 
-and wacky projects. I’m eager to continue applying my passion, 
-skill, knowledge and love for the field of computer engineering 
-to create innovative and elegant solutions.  
+I’m a Junior at the <a href="https://msoe.edu" target="_blank" rel="noopener">Milwaukee School of Engineering</a> pursuing a bachelor’s in computer engineering. With over 10 years of hobbyist experience with RTL and hardware development - my passion for computers and hardware started early at just 10 years old. I’ve developed custom software/hardware solutions that have been deployed across the country through previous internship experience and I’m eager to continue applying my passion, skill, knowledge and love for the field of computer engineering to create more innovative and elegant solutions.  
 </p>
 
 
 <h3>Skills</h3>
 <ul class="multi-column-list">
-<li>Python (Tkinter, PyQt, matplotlib, tensorflow, pytorch, transformers, pandas, pyserial, Qiskit, Flask)</li>
-<li>VHDL</li>
-<li>HTML/CSS</li>
-<li>Verilog/SystemVerilog</li>
-<li>TCL (TCL/Tk)</li>
-<li>C</li>
-<li>Java</li>
-<li>MATLAB</li>
-<li>Git</li>
-<li>PCB design</li>
-<li>Arduino/Arduino IDE</li>
-<li>CocoTB</li>
-<li>Questasim</li>
-<li>Harware in the loop (HIL)</li>
-<li>Simulink & Speedgoat</li>
+  <li>Python (Tkinter, PyQt, matplotlib, tensorflow, pytorch, transformers, pandas, pyserial, Qiskit, Flask)</li>
+  <li>VHDL</li>
+  <li>Verilog/SystemVerilog</li>
+  <li>C</li>
+  <li>C++</li>
+  <li>Java</li>
+  <li>Kotlin</li>
+  <li>JavaScript</li>
+  <li>HTML/CSS</li>
+  <li>Bash</li>
+  <li>TCL (Tcl/Tk)</li>
+  <li>Perl</li>
+  <li>Git</li>
+  <li>Jenkins</li>
+  <li>AXI4, AXI4-Lite</li>
+  <li>Quartus, Modelsim, Vivado, Vitis HLS</li>
+  <li>RISC-V, ARM, Microblaze</li>
+  <li>UVM, CocoTB, PyUVM</li>
+  <li>MATLAB, Simulink, Speedgoat HIL</li>
+  <li>I2C, SPI, Serial, MII</li>
+  <li>Logic Analyzers, JTAG, PLL, DLL</li>
+  <li>NI Multisim</li>
+  <li>Digital Signal Processing</li>
+  <li>Superscalar and Parallel Architectures</li>
+  <li>PCB Design (EasyEDA, JLCPCB)</li>
+  <li>Jupyter Notebook</li>
+  <li>MS Office, Excel</li>
 </ul>
+
 <h3>Websites</h3>
 <ul>
 <li><strong><a href="https://www.easytrig.com" target="_blank" rel="noopener">easytrig.com</a> </strong> Free and Easy Engineering Calculators.</li>
@@ -252,42 +261,143 @@ to create innovative and elegant solutions.
 <em><a alt="Link to my Arduino Fundamentals Certificate." href="https://certifications-assets-cf.arduino.cc/certificates/daa6c36f-aa9d-4de9-9840-2052adfa7e0f.pdf"><p>Link to Certification.</a></em>
 </li>
 
+
+
+
+
 </ul>
-
-
 <h3>Projects</h3>
 <ul>
 
-<li><strong>1Mbps FPGA to FPGA Network with Addressing</strong>
-<em>Technologies Used: VHDL, TCL/Tk, Questasim, Vivado, Manchester, CRC8</em><p>
-For CPE 3300 (Computer Networking) we were tasked with implementing a CSMACD networking protocol with addressing. I decided to implement the entire protocol in pure hardware, this allowed me to bring the specified bitrate of 1000bps all the way up to 1,000,000bps; this development process involved many test benches, a deep pipeline, and a lot of time on the saleae logic analyzer.
-
-<p>
-The implementation includes but is not limited to the following:<p>
-<p>* Packet structure: (preamble, source, destination, length, message(1-255bytes), CRC8 FCS)
-<p>* 8 Stage calibration pipeline on the Manchester decoder providing an extreme range of tolerances for decoding incoming Manchester streams.
-<p>* Pseudorandom retransmission of packets if network is detected as a collision.
+<li><strong>CSMA/CD Networking Protocol Implemented and Pipelined on Artix 7 FPGA | 2025</strong><p>
+<em>Technologies Used: VHDL, QuestaSim, TCL, Vivado, Manchester Encoding, EasyEDA, JLCPCB</em></p>
+<ul>
+  <li>Project Objective: Implement MSOE networking protocol in pure hardware - Deep pipelines.</li>
+  <li>Implementation tested up to 2mbps with >98% accuracy.</li>
+  <li>Implementation recognizes collisions mid transmission and knows to retransmit packets to directed device when network returns idle, successfully interacting over RJ45 switch.</li>
+  <li>Features: CRC8, packet construction around message, 255 unique addresses, broadcasting address, and two UART communication ports for sending and reading network messages.</li>
+  <li>The two UART boards that talk to the FPGA feature a CP2102 and use a USB type C connector; these were developed in EasyEDA and printed through JLCPCB.</li>
+  <li>Developed TCL/Tk scripts for building project and running testbenches on new git clone.</li>
+  <li>Eight-stage calibration pipeline on the Manchester decoder to handle 25% tolerance.</li>
+  <li>Result: Successfully achieved interoperability with another implementation through switch.</li>
+</ul>
 </li>
 
-<li><strong>AI Chatbot</strong> 
-<em>Technologies Used: Python (Flask, llama_cpp, HTTPServer)</em><p>
- Custom made terminal frontend that allows the user to communicate with a quantized obliterated LLM. <a href="https://youtu.be/Zt4UJCS3wlM?feature=shared" target="_blank" rel="noopener"> Watch the Demo!</a></li>
- 
-<li><strong>RM69330 Breakout Board & BLE App</strong>
- <em>Technologies Used: C++, Teensy 4.0, Arduino IDE, Android Studio, Kotlin</em><p>
- I Designed and manufactured a 1.8V digital logic level shifter board complete with interconnects to the display. The Android app I created connects to a user's phone over bluetooth; the user sends an image and is converted and displayed in beautiful 454x454 AMOLED. ACK/NACK was added to the image sending process to request a resend of dropped pixels during transmission.
- </li> 
- 
-<li><strong>ARM Processor from scratch in VHDL.</strong>
- <em>Technologies Used: Quartus, VHDL, ModelSIM</em><p>
- In Digital Logic II I implemented an ARM processor in VHDL on the DE10, 
- an FPGA development board.</li>
- 
-<li><strong>8Bit Computer (SAP-1) from scratch</strong>
- <em>Technologies Used: 74LS logic chips</em><p>
-Started at 13Yrs old I began to construct the SAP-1 computer based on 'Digital Computer Electronics' from Paul Malvino; completed at 14yrs old.</li>
- 
+<li><strong>Broadcast UDP Packets with Artix 7 FPGA through Homelab Network Switch | 2025</strong><p>
+<em>Technologies Used: VHDL, Vivado, MII, UDP</em></p>
+<ul>
+  <li>Project Objective: Broadcast hardcoded UDP packets to contain message payloads.</li>
+  <li>Designed and implemented a pure hardware solution for the Artix 7 FPGA that can transmit UDP packets over ethernet through the PHY via MII interface connected to the PL.</li>
+  <li>UDP packets contain custom payloads any device in my home lab network can receive.</li>
+  <li>Result: Completed – College Junior Year, plans to expand functionality further.</li>
 </ul>
+</li>
+
+<li><strong>Inference of Quantized Neural Networks with Ultrascale+ FPGAs | 2024–2025</strong><p>
+<em>Technologies Used: Python, Vivado, Vitis (HLS), GitLab, Pytorch, Tensorflow</em></p>
+<ul>
+  <li>Project Objective: Run quantized neural networks in parallel >150MHz on Ultrascale+.</li>
+  <li>Designed and developed Pytorch & Tensorflow python programs to train sequential neural networks with ReLU activation to predict patterns for people with diabetes, sensor failure, and nonlinear abnormal trigonometry functions.</li>
+  <li>Developed python scripts to extract weights and biases from trained networks.</li>
+  <li>Developed python scripts to quantize exported weights and biases in 16/8/4bit, and ternary.</li>
+  <li>Developed python scripts to write and save new VHDL hardware entities and packages for synthesizing hardware capable of inference – deep pipelining was utilized for timing.</li>
+  <li>Result: &lt;1Watt for inference of 1000neurons – Expanding functionality.</li>
+</ul>
+</li>
+
+<li><strong>Create my own Chatbot Server Stack | 2024–2025</strong><p>
+<em>Technologies Used: Wireguard, Python (llama_cpp, HTTPServer, Flask), HTML, CSS, JS</em></p>
+<ul>
+  <li>Project Objective: Local hosted LLM accessible through webserver on VPN subnet.</li>
+  <li>Local inference of a quantized 8billion parameter LLM using llama_cpp.</li>
+  <li>I developed and deployed a frontend webpage hosted on my desktop that would send and receive responses generated by the LLM to the site.</li>
+  <li>HTTP server on 10.0.0.2:5000 listens for incoming payload, processes JSON payload, responds with JSON message.</li>
+  <li>Custom commands on frontend user input for clearing screen and providing help messages.</li>
+  <li>Enter questions are sent to the Flask server on 10.0.0.2:5001, this is forwarded to the LLM.</li>
+  <li>Result: From anywhere in the world, I can access my VPN server which gives me access to my locally hosted alliterated LLM.</li>
+</ul>
+</li>
+
+<li><strong>FPGA Based Arbitrary Waveform Generator with Custom PCBs | 2023–2024</strong><p>
+<em>Technologies Used: VHDL, Vivado, C, CubeIDE, SPI</em></p>
+<ul>
+  <li>Project Objective: FPGA – Parallel DAC Waveform generator.</li>
+  <li>Designed and printed PCBs each with one parallel DAC and ADC with two SMA connectors.</li>
+  <li>Parallel DACs connected to an Artix 7 FPGA development board, user toggles switches on the FPGA board to change the frequency of the output wave and the type.</li>
+  <li>Waves implemented (square, sine, triangle, and sawtooth).</li>
+  <li>Waveform fed into onboard ADC of an STM32F411 microcontroller, driven by interrupts.</li>
+  <li>STM32 drives a LED dot matrix display to showcase the varying voltage levels of waveform.</li>
+  <li>Result: Generated various waveforms through my custom PCBs, demo on perrynewlin.com.</li>
+</ul>
+</li>
+
+<li><strong>Develop Website for Phasor Calculation & Testbenches Generation | 2023–2025</strong><p>
+<em>Technologies Used: HTML, CSS, JS (chart.js, three.js)</em></p>
+<ul>
+  <li>Project Objective: Create a website for calculating phasors.</li>
+  <li>Designed and created easytrig.com – a website that makes math operations pertaining to circuit analysis far easier to perform on mobile devices.</li>
+  <li>Render outputs from OpenAI’s ChatGPT in markdown and convert to PDF.</li>
+  <li>Add, subtract, multiply, and divide phasors with steps rendered in real-time.</li>
+  <li>Render phasors as sinusoids with zooming and autozoom features.</li>
+  <li>Plot imaginary numbers as vectors and have length calculated in real-time.</li>
+  <li>Added tool to generate VHDL testbench boilerplate code based on entity ports.</li>
+  <li>Result: Easytrig gets 1000+ monthly visits, bringing free and powerful tools to the masses.</li>
+</ul>
+</li>
+
+<li><strong>Develop, Synthesize, and Implement soft ARMv4 Processor in VHDL | 2022</strong><p>
+<em>Technologies Used: VHDL, Quartus, ModelSim</em></p>
+<ul>
+  <li>Project Objective: ARM processor on Intel DE10 FPGA development board.</li>
+  <li>In Digital Logic II I implemented the ARMv4 ISA as a soft processor in VHDL on the DE10.</li>
+  <li>Implemented w/ VHDL: instruction fetch, decode, execute, memory, and register writeback.</li>
+  <li>Verified program execution, and writeback functionality with comprehensive testbenches.</li>
+  <li>IROM compatible with the following assembly: MOV, LDR, STR, ADD, SUB, CMP, BEQ.</li>
+  <li>Result: Executed a program to light up LEDs that utilized branches, arithmetic, and load/store.</li>
+</ul>
+</li>
+
+<li><strong>Custom Handheld Microcontroller Game Console | 2020–2021</strong><p>
+<em>Technologies Used: C, Arduino, I2C, UI design, FRAM, JTAG (AVR Programmer), PCB Design</em></p>
+<ul>
+  <li>Project Objective: Portable handheld game console using custom PCBs.</li>
+  <li>Designed custom board using 32u4 microcontroller.</li>
+  <li>Designed and programmed custom games rendered on a 128x32 I2C screen.</li>
+  <li>Games which include object avoidance with built in difficulty increase as score increments.</li>
+  <li>Designed custom FRAM logic to store user scores after console shutdown.</li>
+  <li>Result: Could play custom made two-color games in a case &lt; 1” wide at more than 40 frames.</li>
+</ul>
+</li>
+
+<li><strong>Accessibility OLED Watch to Display my Class Schedule | 2018</strong><p>
+<em>Technologies Used: C, Arduino, I2C, UI design</em></p>
+<ul>
+  <li>Project Objective: Create a watch using a low powered MCU that displays my class schedule.</li>
+  <li>Designed wristwatch with 16u4 development board, LiPo battery, & I2C OLED display.</li>
+  <li>Designed U.I to display class schedule for which day of week it was.</li>
+  <li>Displayed schedule could be cycled using a single push button input, debounced.</li>
+  <li>Result: No longer had to remember a long schedule, just look at my custom watch!</li>
+</ul>
+</li>
+
+<li><strong>Simple as Possible 1 Single Cycle Computer | 2015–2016</strong><p>
+<em>Technologies Used: 74LS series ICs, EEPROMs, Oscilloscope, Function Generator</em></p>
+<ul>
+  <li>Project Objective: Build 8-bit SAP-1 Computer From Scratch.</li>
+  <li>Used 74LS series logic chips and other DIP based chips to build an 8bit computer entirely on breadboards.</li>
+  <li>After 7 months it was completed and was able to run the JMP command.</li>
+  <li>After 8 months it could play the Fibonacci sequence all on its own.</li>
+  <li>Features: 8-Bit instruction register, 4-bit program counter, 8-Bit accumulator and B-register.</li>
+  <li>Inspired by Ben Eater.</li>
+  <li>Result: Can perform a jump instruction and run a loaded program in the EEPROM.</li>
+</ul>
+</li>
+
+</ul>
+
+
+
+
 
 
 <h3>Relevant Coursework</h3>
