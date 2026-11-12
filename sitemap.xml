@@ -1,26 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-
-<url>
-  <loc>https://www.perrynewlin.com/</loc>
-  <lastmod>2024-12-29T12:22:20+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.perrynewlin.com/post_coming_soon.htm</loc>
-  <lastmod>2024-12-29T12:22:20+00:00</lastmod>
-  <priority>0.10</priority>
-</url>
-<url>
-  <loc>https://www.perrynewlin.com/index.htm</loc>
-  <lastmod>2024-12-29T12:22:20+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.perrynewlin.com/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <image:image><image:loc>https://www.perrynewlin.com/img/PerryNewlin_NewVersion_389x389.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.perrynewlin.com/extras.htm</loc>
+    <lastmod>2026-11-11</lastmod>
+  </url>
 </urlset>
