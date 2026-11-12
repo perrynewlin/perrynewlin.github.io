@@ -1,0 +1,282 @@
+{
+  "entries": [
+    {
+      "@context": "https://agenticresourcediscovery.org/context/v1",
+      "identifier": "urn:air:www.perrynewlin.com:profile",
+      "displayName": "Perry Newlin professional profile",
+      "description": "Structured profile for Perry Newlin, including his current AMD role, MSOE affiliation, portrait, and verified profile links.",
+      "representativeQueries": [
+        "Who is Perry Newlin, the AMD RTL design engineer?",
+        "What is Perry Newlin's connection to MSOE?"
+      ],
+      "type": "application/ld+json",
+      "data": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "ProfilePage",
+            "@id": "https://www.perrynewlin.com/#webpage",
+            "url": "https://www.perrynewlin.com/",
+            "name": "Perry Newlin | AMD RTL Design Engineer | MSOE",
+            "description": "Perry Newlin: RTL design and FPGA prototyping at AMD, computer engineering at MSOE, and experience at Leonardo DRS. Explore hardware projects and demonstrations.",
+            "inLanguage": "en",
+            "dateModified": "2026-11-11",
+            "isPartOf": {
+              "@id": "https://www.perrynewlin.com/#website"
+            },
+            "mainEntity": {
+              "@id": "https://www.perrynewlin.com/#perry-newlin"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://www.perrynewlin.com/#portrait"
+            }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://www.perrynewlin.com/#perry-newlin",
+            "name": "Perry Newlin",
+            "alternateName": "Perry H. Newlin",
+            "url": "https://www.perrynewlin.com/",
+            "image": {
+              "@id": "https://www.perrynewlin.com/#portrait"
+            },
+            "jobTitle": "RTL Design Engineer 1 (contract)",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Advanced Micro Devices",
+              "alternateName": "AMD"
+            },
+            "affiliation": {
+              "@type": "CollegeOrUniversity",
+              "name": "Milwaukee School of Engineering",
+              "alternateName": "MSOE",
+              "url": "https://www.msoe.edu/"
+            },
+            "knowsAbout": [
+              "FPGA prototyping",
+              "RTL design",
+              "Multi-FPGA partitioning",
+              "SystemVerilog",
+              "VHDL",
+              "AMD Vivado",
+              "Computer engineering"
+            ],
+            "sameAs": [
+              "https://www.linkedin.com/in/perry-newlin/",
+              "https://github.com/perrynewlin",
+              "https://www.youtube.com/channel/UCUqaXvtKd1lx23ouXWlAk2Q",
+              "https://github.com/pocketconsolecore",
+              "https://www.easytrig.com/about.html"
+            ]
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://www.perrynewlin.com/#portrait",
+            "url": "https://www.perrynewlin.com/img/PerryNewlin_NewVersion_389x389.webp",
+            "contentUrl": "https://www.perrynewlin.com/img/PerryNewlin_NewVersion_389x389.webp",
+            "width": 389,
+            "height": 389,
+            "caption": "Perry Newlin"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.perrynewlin.com/#website",
+            "url": "https://www.perrynewlin.com/",
+            "name": "Perry Newlin",
+            "publisher": {
+              "@id": "https://www.perrynewlin.com/#perry-newlin"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@context": "https://agenticresourcediscovery.org/context/v1",
+      "identifier": "urn:air:www.perrynewlin.com:fpga-video-catalog",
+      "displayName": "Perry Newlin FPGA video catalog",
+      "description": "Structured catalog of Perry Newlin's featured FPGA YouTube Shorts, including titles, thumbnails, and links to watch them.",
+      "representativeQueries": [
+        "Where can I watch Perry Newlin's FPGA board demonstrations?",
+        "Where is Perry Newlin's FPGA Transmitter Demo from his home lab?"
+      ],
+      "type": "application/ld+json",
+      "data": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://www.perrynewlin.com/extras.htm#webpage",
+            "url": "https://www.perrynewlin.com/extras.htm",
+            "name": "Perry Newlin | FPGA Videos & Extras",
+            "description": "FPGA board walkthroughs and home lab demonstrations by Perry Newlin. Watch popular YouTube Shorts featuring AMD FPGAs and an FPGA transmitter.",
+            "inLanguage": "en",
+            "dateModified": "2026-11-11",
+            "isPartOf": {
+              "@id": "https://www.perrynewlin.com/#website"
+            },
+            "about": {
+              "@id": "https://www.perrynewlin.com/#perry-newlin"
+            },
+            "mainEntity": {
+              "@type": "ItemList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "This AMD FPGA is $10,000",
+                  "url": "https://www.youtube.com/shorts/WXR847ov_Ys",
+                  "image": "https://www.perrynewlin.com/img/perry-newlin-amd-fpga-short.jpg"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Have You Seen this FPGA Board Before?",
+                  "url": "https://www.youtube.com/shorts/3xrpM0XPsmE",
+                  "image": "https://www.perrynewlin.com/img/perry-newlin-fpga-board-short.jpg"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "FPGA Transmitter Demo (Home Lab)",
+                  "url": "https://www.youtube.com/shorts/cSzMQehGvDA",
+                  "image": "https://www.perrynewlin.com/img/perry-newlin-fpga-transmitter-short.jpg"
+                }
+              ]
+            },
+            "primaryImageOfPage": {
+              "@id": "https://www.perrynewlin.com/extras.htm#WXR847ov_Ys"
+            }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://www.perrynewlin.com/#perry-newlin",
+            "name": "Perry Newlin",
+            "alternateName": "Perry H. Newlin",
+            "url": "https://www.perrynewlin.com/",
+            "image": {
+              "@id": "https://www.perrynewlin.com/#portrait"
+            },
+            "jobTitle": "RTL Design Engineer 1 (contract)",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Advanced Micro Devices",
+              "alternateName": "AMD"
+            },
+            "affiliation": {
+              "@type": "CollegeOrUniversity",
+              "name": "Milwaukee School of Engineering",
+              "alternateName": "MSOE",
+              "url": "https://www.msoe.edu/"
+            },
+            "knowsAbout": [
+              "FPGA prototyping",
+              "RTL design",
+              "Multi-FPGA partitioning",
+              "SystemVerilog",
+              "VHDL",
+              "AMD Vivado",
+              "Computer engineering"
+            ],
+            "sameAs": [
+              "https://www.linkedin.com/in/perry-newlin/",
+              "https://github.com/perrynewlin",
+              "https://www.youtube.com/channel/UCUqaXvtKd1lx23ouXWlAk2Q",
+              "https://github.com/pocketconsolecore",
+              "https://www.easytrig.com/about.html"
+            ]
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://www.perrynewlin.com/#portrait",
+            "url": "https://www.perrynewlin.com/img/PerryNewlin_NewVersion_389x389.webp",
+            "contentUrl": "https://www.perrynewlin.com/img/PerryNewlin_NewVersion_389x389.webp",
+            "width": 389,
+            "height": 389,
+            "caption": "Perry Newlin"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.perrynewlin.com/#website",
+            "url": "https://www.perrynewlin.com/",
+            "name": "Perry Newlin",
+            "publisher": {
+              "@id": "https://www.perrynewlin.com/#perry-newlin"
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://www.perrynewlin.com/extras.htm#WXR847ov_Ys",
+            "name": "This AMD FPGA is $10,000",
+            "caption": "AMD FPGA development board from Perry Newlin's video This AMD FPGA is $10,000",
+            "contentUrl": "https://www.perrynewlin.com/img/perry-newlin-amd-fpga-short.jpg",
+            "url": "https://www.perrynewlin.com/img/perry-newlin-amd-fpga-short.jpg",
+            "sameAs": "https://i.ytimg.com/vi/WXR847ov_Ys/hqdefault.jpg",
+            "width": 480,
+            "height": 360,
+            "encodingFormat": "image/jpeg",
+            "creditText": "Perry Newlin / YouTube",
+            "creator": {
+              "@id": "https://www.perrynewlin.com/#perry-newlin"
+            },
+            "isPartOf": {
+              "@type": "CreativeWork",
+              "name": "This AMD FPGA is $10,000",
+              "url": "https://www.youtube.com/shorts/WXR847ov_Ys",
+              "author": {
+                "@id": "https://www.perrynewlin.com/#perry-newlin"
+              }
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://www.perrynewlin.com/extras.htm#3xrpM0XPsmE",
+            "name": "Have You Seen this FPGA Board Before?",
+            "caption": "FPGA development board from Perry Newlin's video Have You Seen this FPGA Board Before?",
+            "contentUrl": "https://www.perrynewlin.com/img/perry-newlin-fpga-board-short.jpg",
+            "url": "https://www.perrynewlin.com/img/perry-newlin-fpga-board-short.jpg",
+            "sameAs": "https://i.ytimg.com/vi/3xrpM0XPsmE/hqdefault.jpg",
+            "width": 480,
+            "height": 360,
+            "encodingFormat": "image/jpeg",
+            "creditText": "Perry Newlin / YouTube",
+            "creator": {
+              "@id": "https://www.perrynewlin.com/#perry-newlin"
+            },
+            "isPartOf": {
+              "@type": "CreativeWork",
+              "name": "Have You Seen this FPGA Board Before?",
+              "url": "https://www.youtube.com/shorts/3xrpM0XPsmE",
+              "author": {
+                "@id": "https://www.perrynewlin.com/#perry-newlin"
+              }
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://www.perrynewlin.com/extras.htm#cSzMQehGvDA",
+            "name": "FPGA Transmitter Demo (Home Lab)",
+            "caption": "FPGA transmitter demonstration from Perry Newlin's home lab",
+            "contentUrl": "https://www.perrynewlin.com/img/perry-newlin-fpga-transmitter-short.jpg",
+            "url": "https://www.perrynewlin.com/img/perry-newlin-fpga-transmitter-short.jpg",
+            "sameAs": "https://i.ytimg.com/vi/cSzMQehGvDA/hqdefault.jpg",
+            "width": 480,
+            "height": 360,
+            "encodingFormat": "image/jpeg",
+            "creditText": "Perry Newlin / YouTube",
+            "creator": {
+              "@id": "https://www.perrynewlin.com/#perry-newlin"
+            },
+            "isPartOf": {
+              "@type": "CreativeWork",
+              "name": "FPGA Transmitter Demo (Home Lab)",
+              "url": "https://www.youtube.com/shorts/cSzMQehGvDA",
+              "author": {
+                "@id": "https://www.perrynewlin.com/#perry-newlin"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
